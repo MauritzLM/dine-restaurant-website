@@ -65,30 +65,49 @@
     </section>
 
     <div class="events">
-      <div>
-        <p>Family Gathering</p>
-        <p>Special Events</p>
-        <p>Social Events</p>
+      <picture class="family-images">
+        <source media="(max-width: 700px)" srcset="./src/images/homepage/family-gathering-mobile.jpg">
+        <source media="(max-width: 1000px)" srcset="./src/images/homepage/family-gathering-tablet.jpg" />
+        <img src="./src/images/homepage/family-gathering-desktop.jpg" alt="">
+      </picture>
+
+      <picture class="special-images hidden">
+        <source media="(max-width: 700px)" srcset="./src/images/homepage/special-events-mobile.jpg">
+        <source media="(max-width: 1000px)" srcset="./src/images/homepage/special-events-tablet.jpg" />
+        <img src="./src/images/homepage/special-events-desktop.jpg" alt="">
+      </picture>
+
+      <picture class="social-images hidden">
+        <source media="(max-width: 700px)" srcset="./src/images/homepage/social-events-mobile.jpg">
+        <source media="(max-width: 1000px)" srcset="./src/images/homepage/social-events-tablet.jpg" />
+        <img src="./src/images/homepage/social-events-desktop.jpg" alt="">
+      </picture>
+
+      <div class="event-select">
+        <p class="family-select">Family Gathering</p>
+        <p class="special-select">Special Events</p>
+        <p class="social-select">Social Events</p>
       </div>
 
-      <div>
-        <h3>Family Gathering</h3>
-        <p>We love catering for entire families. So please bring everyone along for a special meal with your
-          loved ones. We’ll provide a memorable experience for all.</p>
-      </div>
+      <div class="event-type">
+        <div class="family-text">
+          <h3>Family Gathering</h3>
+          <p>We love catering for entire families. So please bring everyone along for a special meal with your
+            loved ones. We’ll provide a memorable experience for all.</p>
+        </div>
 
-      <div>
-        <h3>Special Events</h3>
-        <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
-          We’ll be sure to mark your special date with an unforgettable meal.</p>
-      </div>
+        <div class="special-text hidden">
+          <h3>Special Events</h3>
+          <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you.
+            We’ll be sure to mark your special date with an unforgettable meal.</p>
+        </div>
 
-      <div>
-        <h3>Social Events</h3>
-        <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
-          parties. We’ll work with you to make your event a hit with everyone.</p>
+        <div class="social-text hidden">
+          <h3>Social Events</h3>
+          <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big
+            parties. We’ll work with you to make your event a hit with everyone.</p>
+        </div>
       </div>
-
       <button>Book a table</button>
     </div>
 
