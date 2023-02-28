@@ -4,12 +4,34 @@
 
 html {
     font-size: 10px;
+    font-family: 'League Spartan', sans-serif;
 }
 
 body {
     font-size: 1.6rem;
+    margin: 0;
+}
+
+header,
+footer,
+.highlights {
+    background-color: hsl(0, 0%, 7%);
+    color: hsl(0, 0%, 100%);
+}
+
+.make-reservation {
+    background-image: url(./images/homepage/ready-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
 }
 
 .hidden {
     display: none;
+}
+
+/* Booking page */
+.reservations {
+    background-image: url(./images/booking/hero-bg-mobile.jpg);
+    background-repeat: no-repeat;
+    /* background-size: ; */
 }
