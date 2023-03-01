@@ -19,19 +19,21 @@
 <body>
   <header>
     <picture>
-      <source media="(max-width: 700px)" srcset="./src/images/homepage/hero-bg-mobile.jpg">
-      <source media="(max-width: 1000px)" srcset="./src/images/homepage/hero-bg-tablet.jpg">
+      <source media="(max-width: 700px)" srcset="./src/images/homepage/hero-bg-mobile-cropped.jpg">
+      <source media="(max-width: 1000px)" srcset="./src/images/homepage/hero-bg-tablet-cropped.jpg">
       <img src="./src/images/homepage/hero-bg-desktop.jpg" alt="">
     </picture>
 
-    <img src="./src/images/logo.svg" alt="">
-    <h1>Exquisite dining since 1989</h1>
+    <div class="header-content">
+      <div class="logo"><img src="./src/images/logo.svg" alt=""></div>
 
-    <p>Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from
-      the comfort of our farmhouse.</p>
+      <h1>Exquisite dining since 1989</h1>
 
-    <button>Book a table</button>
+      <p>Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from
+        the comfort of our farmhouse.</p>
 
+      <a class="button" href="">Book a table</a>
+    </div>
   </header>
   <main>
     <div>
@@ -155,20 +157,22 @@
             parties. We’ll work with you to make your event a hit with everyone.</p>
         </div>
       </div>
-      <button>Book a table</button>
+      <a class="button" href="">Book a table</a>
     </div>
 
 
     <div class="make-reservation">
       <h3>Ready to make a reservation?</h3>
 
-      <button>Book a table</button>
+      <a class="button" href="">Book a table</a>
     </div>
   </main>
 
   <!-- footer -->
   <footer>
-    <img src="./src/images/logo.svg" alt="">
+    <div class="logo">
+      <img src="./src/images/logo.svg" alt="">
+    </div>
     <p>Marthwaite, Sedbergh</p>
     <p>Cumbria</p>
     <p>+00 44 123 4567</p>
