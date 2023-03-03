@@ -3,8 +3,16 @@ const form = document.querySelector(".booking-form");
 // form inputs
 const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("#email");
-const dateInput = document.querySelector("#date");
-const timeInput = document.querySelector("#time");
+
+// date inputs
+const dateInputMonth = document.querySelector("#month");
+const dateInputDay = document.querySelector("#day");
+const dateInputYear = document.querySelector("#year");
+
+// time inputs
+const timeInputHour = document.querySelector("#hour");
+const timeInputMinute = document.querySelector("#minute");
+const timeInputAmOrPM = document.querySelector("#morning-afternoon");
 
 // error message elements
 const emailError = document.querySelector(".email-error");
@@ -23,10 +31,16 @@ form.addEventListener('submit', (e) => {
     emailInput.validity.typeMismatch ? emailError.textContent = 'Please use a valid email address' : '';
 
     // date missing
-    dateInput.validity.valueMissing ? dateError.textContent = 'This field is incomplete' : dateError.textContent = '';
+    if (dateInputMonth.validity.valueMissing || dateInputDay.validity.valueMissing || dateInputYear.validity.valueMissing) {
+        dateError.textContent = 'This field is incomplete';
+    }
 
     // time missing
-    timeInput.validity.valueMissing ? timeError.textContent = 'This field is incomplete' : timeError.textContent = '';
+    if (timeInputHour.validity.valueMissing || timeInputMinute.validity.valueMissing) {
+        timeError.textContent = 'This field is incomplete';
+    }
 
+    // no date or time error
+    // dateError.textContent = '';
     e.preventDefault();
 });

@@ -35,16 +35,36 @@
       <input type="email" id="email" name="email" placeholder="Email" required>
       <span class="email-error"></span>
 
-      <label for="date">Pick a date</label>
-      <input id="date" type="date" required>
-      <span class="date-error"></span>
+      <fieldset class="date-select">
+        <legend>Pick a date</legend>
 
-      <label for="time">Pick a time</label>
-      <input id="time" type="time" required>
-      <span class="time-error"></span>
+        <label for="month"></label> <input id="month" type="number" placeholder="MM" min="01" max="12" required>
+
+        <label for="day"></label><input id="day" type="number" placeholder="DD" min="1" max="31" required>
+
+        <label for="year"></label><input id="year" type="number" placeholder="YYYY" min="2023" max="2024" required>
+
+        <span class="date-error"></span>
+      </fieldset>
+
+      <fieldset class="time-select">
+        <legend>Pick a time</legend>
+
+        <label for="hour"></label> <input id="hour" type="number" placeholder="09" required>
+
+        <label for="minute"></label> <input id="minute" type="number" placeholder="00" required>
+
+        <label for="morning-afternoon"></label>
+        <select name="morning-afternoon" id="morning-afternoon">
+          <option value="am">AM</option>
+          <option value="pm">PM</option>
+        </select>
+
+        <span class="time-error"></span>
+      </fieldset>
 
       <input type="number" placeholder="4">
-      <button type="submit">Make Reservation</button>
+      <button type="submit" class="button">Make Reservation</button>
     </form>
   </main>
 
