@@ -72,8 +72,6 @@ header img {
     align-items: center;
 }
 
-
-
 .make-reservation {
     background-image: url(./images/homepage/ready-bg-mobile.jpg);
     background-repeat: no-repeat;
@@ -82,6 +80,10 @@ header img {
 
 .hidden {
     display: none;
+}
+
+.selected {
+    font-weight: 600;
 }
 
 /* buttons */
@@ -103,6 +105,44 @@ header img {
     background-image: url(./images/booking/hero-bg-mobile.jpg);
     background-repeat: no-repeat;
     /* background-size: ; */
+}
+
+/* form */
+form {
+    padding: 2em;
+}
+
+fieldset {
+    border: none;
+}
+
+form input,
+form .button {
+    appearance: none;
+    border: none;
+    width: 100%;
+    font: inherit;
+    font-size: 2rem;
+}
+
+.date-select input[type="number"],
+.time-select input[type="number"],
+.time-select select {
+    width: 100px;
+    display: inline;
+}
+
+/* label {
+    text-align: left;
+} */
+
+form input {
+    padding: 1em;
+    border-bottom: 1px solid hsl(0, 0%, 7%);
+}
+
+input[type="number"] {
+    font-weight: 600;
 }
 
 /* Footer */
